@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETCH-A-SKETCH</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <h1>ETCH-A-SKETCH</h1>
+
+    <!-- Options -->
+    <div class="options">
+        <button id="erase">Erase</button>
+        <button id="color">Color <input type="color"></button>
+        <button id="rainbow">Rainbow</button>
+        <button id="clear">Clear</button>
+    </div>
+    <!-- Board -->
+    <div class="board">
+
+    </div>
+    <!-- Rescale -->
+    <div class="resize">
+        <label for="Size">Grid Size</label>
+        <input type="range" id="Size" name="Size" min="1" max="32">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Body */
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    background-color: #34495e;
+}
+
+/* Options */
+.options{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button{
+    width: 100px;
+    height:50px;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.isClicked{
+    box-shadow: 0 0 10px rgb(216, 216, 216);
+    color:red;
+}
+
+input[type="color"]{
+    border:none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Board and titles */
+.board{
+    width: 500px;
+    height: 500px;
+    display: grid;
+}
+
+.title{
+    /* width: 30px;
+    height: 30px; */
+    border: 1px solid rgb(175, 216, 248);
+    background-color: white;
+}
+
+/* Change size */
+.resize{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.resize label{
+    display: block;
+    width: 100px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.resize input{
+    width: 300px;
+    display: block;
+}
+
+/* Responsive */
+@media only screen and (max-width: 550px){
+    .options{
+        width: 90vw;
+    }
+    .board{
+        width: 90vw;
+        height: 90vw;
+        display: grid;
+    }
+}
